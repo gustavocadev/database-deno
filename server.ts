@@ -19,6 +19,6 @@ const DEFAULT_PORT = 3000
 
 const argPort = parse(Deno.args).port
 
-await app.listen({ port: argPort ? argPort : DEFAULT_PORT });
+await app.listen({ port: argPort ? Number(argPort) : DEFAULT_PORT });
 
 export { handle }
