@@ -12,5 +12,4 @@ router.post("/users/delete/:id", deleteUser);
 // Actualizamos usuario
 router.post('/users/update/:id', updateUser)
 
-
 export default router
